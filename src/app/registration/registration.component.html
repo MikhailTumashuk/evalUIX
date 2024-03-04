@@ -1,0 +1,240 @@
+<body>
+<div class="main-swiper-container swiper-container">
+
+  <div class="main-swiper-wrapper swiper-wrapper">
+    <!--Слайд свайпера 1, блок формы 1, каждый слайд содержит в себе свайпер-->
+    <div class="main-swiper-wrapper swiper-slide">
+      <div class="reg-container">
+        <a routerLink="/home" class="back-button" title="На домашнюю страницу"><img src="assets/back.png"></a>
+        <h1>
+          Регистрация
+        </h1>
+        <div class="reg-form-container">
+          <div class="reg-form-btn-container">
+            <a href="">
+              <button>Пользователь</button>
+            </a>
+            <div><p>Эксперт</p></div>
+          </div>
+          <div class="form-container">
+            <form [formGroup]="form">
+              <input id="login" type="text" placeholder="Имя пользователя" formControlName="login" [(ngModel)]="username">
+
+              <span
+                class="form-help-text"
+                *ngIf="form.get('login')?.invalid && form.get('login')?.touched"
+              >
+          <div *ngIf="form.get('login')?.hasError('required')">Логин не может быть пустым</div>
+          <div *ngIf="form.get('login')?.hasError('minlength')">Логин не может содержать меньше 2 символов</div>
+          <div *ngIf="form.get('login')?.hasError('pattern')">Логин должен содержать только буквы и числа</div>
+          <div *ngIf="form.get('login')?.hasError('maxlength')">Логин не может содержать более 15 символов</div>
+        </span>
+
+              <input id="email" type="text" placeholder="Ваш e-mail" formControlName="email" [(ngModel)]="email">
+              <span
+                class="form-help-text"
+                *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
+              >
+          <div *ngIf="form.get('email')?.hasError('required')">email не может быть пустым</div>
+          <div *ngIf="form.get('email')?.hasError('minlength')">email не может содержать меньше 2 символов</div>
+          <div *ngIf="form.get('email')?.hasError('email')">Введите корректный email</div>
+          <div *ngIf="form.get('email')?.hasError('maxlength')">email не может содержать более 30 символов</div>
+        </span>
+
+              <div>
+                <input id="password" type="password" placeholder="Пароль" formControlName="password" [(ngModel)]="password" #passwordInput>
+                <button id="show-password" class="show-password-buttons" (click)="togglePasswordVisibility(passwordInput)">
+                  <img src="assets/eye.png" alt="показать">
+                </button>
+              </div>
+
+              <span
+                class="form-help-text"
+                *ngIf="form.get('password')?.invalid && form.get('password')?.touched"
+              >
+          <div *ngIf="form.get('password')?.hasError('required')">Пароль не может быть пустым</div>
+          <div *ngIf="form.get('password')?.hasError('minlength')">Пароль не может содержать менее 7 символов</div>
+          <div *ngIf="form.get('password')?.hasError('maxlength')">Пароль не может содержать более 20 символов</div>
+        </span>
+              <div>
+                <input id="confirm-password" type="password" placeholder="Повторите пароль" formControlName="confirmPassword"
+                       [ngClass]="{'password-mismatch': form.hasError('passwordMismatch')}" #repeatPasswordInput>
+                <button id="repeat-password" class="show-password-buttons" (click)="togglePasswordVisibility(repeatPasswordInput)">
+                  <img src="assets/eye.png" alt="показать">
+                </button>
+              </div>
+
+              <span
+                class="form-help-text"
+                *ngIf="form.get('confirmPassword')?.invalid && form.get('confirmPassword')?.touched"
+              >
+          <div *ngIf="form.get('confirmPassword')?.hasError('required')">Повторите пароль</div>
+          <div *ngIf="form.get('confirmPassword')?.hasError('passwordMismatch')">Пароли не совпадают</div>
+        </span>
+              <button class="next-slide main-swiper-button-next" type="submit" [disabled]="!form.valid">Далее</button>
+
+            </form>
+          </div>
+        </div>
+        <div class="auth-link">
+          <a routerLink="/auth">Уже есть аккаунт?</a>
+        </div>
+      </div>
+    </div>
+
+    <!--второй слайд-->
+    <div class="main-swiper-wrapper swiper-slide">
+      <div class="container">
+        <a routerLink="/registration" class="to-registration-link-btn" title="На страницу регистрации">
+          <button><img alt="Назад" src="assets/back.png"></button>
+        </a>
+        <h1>Стать экспертом</h1>
+        <h2>Заполните анкету</h2>
+        <div class="pagination-container"><div class="sub-swiper-pagination"></div></div>
+
+        <div class="sub-swiper-container">
+          <div class="sub-slider-container swiper-wrapper">
+            <div class="main-slider-wrapper swiper-slide">
+              <div class="question-container" style="margin-top: 40px;">
+                <p class="question">Отметьте Ваши навыки:</p>
+                <p><input type="checkbox" name="" id="skills-checkbox-1" value="0.1" [(ngModel)]="checkbox1"><span class="fake-checkbox"></span><label
+                  for="skills-checkbox-1">Профильное образование в
+                  сфере проведения оценок</label></p>
+                <p><input type="checkbox" name="" id="skills-checkbox-2" value="0.1" [(ngModel)]="checkbox2"><span class="fake-checkbox"></span><label
+                  for="skills-checkbox-2">Опыт проведения
+                  оценочной экспертизы</label></p>
+                <p><input type="checkbox" name="" id="skills-checkbox-3" value="0.1" [(ngModel)]="checkbox3"><span class="fake-checkbox"></span><label
+                  for="skills-checkbox-3">Наличие публикаций о
+                  теме экспертных оценок</label></p>
+                <p><input type="checkbox" name="" id="skills-checkbox-4" value="0.1" [(ngModel)]="checkbox4"><span class="fake-checkbox"></span><label
+                  for="skills-checkbox-4">Профильное образование в
+                  сфере разработки интерфейсов</label></p>
+                <p><input type="checkbox" name="" id="skills-checkbox-5" value="0.2" [(ngModel)]="checkbox5"><span class="fake-checkbox"></span><label
+                  for="skills-checkbox-5">Опыт разработки
+                  интерфейсов</label></p>
+                <p><input type="checkbox" name="" id="skills-checkbox-6" value="0.2" [(ngModel)]="checkbox6"><span class="fake-checkbox"></span><label
+                  for="skills-checkbox-6">Наличие публикаций по
+                  теме разработки интерфейсов</label></p>
+                <p><input type="checkbox" name="" id="skills-checkbox-7" value="0.2" [(ngModel)]="checkbox7"><span class="fake-checkbox"></span><label
+                  for="skills-checkbox-7">Работа в профильной
+                  организации по разработке интерфейсов</label></p>
+              </div>
+              <button class="main-swiper-button-prev" type="submit">В блок регистрации</button>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="question-container">
+                <p class="question" style="font-size: 17px">Оцените показатель степени личной
+                  уверенности в соответствии Ваших
+                  суждений действительности
+                  от 0 до 100:</p>
+                <div class="range-container">
+                  <input type="range" min="0" max="100" value="30" (input)="valueChanged($event)">
+                  <div class="slider-value">{{sliderValue}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="question-container">
+                <p class="question">Оцените степень влияния проведенных Вами теоретических и
+                  практических исследований по интерфейсам на Ваше мнение при выставлении оценки:</p>
+                <p><input type="radio" name="evaluate-your-impact-1" id="high-radio-1" value="0.4" [(ngModel)]="highRadio1"><label class="radio-btn-label"
+                                                                                          for="high-radio-1">Высокая</label>
+                </p>
+                <p><input type="radio" name="evaluate-your-impact-1" id="middle-radio-1" value="0.3" [(ngModel)]="middleRadio1"><label class="radio-btn-label"
+                                                                                            for="middle-radio-1">Средняя</label>
+                </p>
+                <p><input type="radio" name="evaluate-your-impact-1" id="low-radio-1" value="0.2" [(ngModel)]="lowRadio1"><label class="radio-btn-label"
+                                                                                         for="low-radio-1">Низкая</label>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="question-container">
+                <p class="question">Оцените степень влияния Вашего непосредственного
+                  участия в проведении подобных типов экспертизы
+                  на Ваше мнение при выставлении оценки:</p>
+                <p><input type="radio" name="evaluate-your-impact-2" id="high-radio-2" value="0.3" [(ngModel)]="highRadio2"><label class="radio-btn-label"
+                                                                                          for="high-radio-2">Высокая</label>
+                </p>
+                <p><input type="radio" name="evaluate-your-impact-2" id="middle-radio-2" value="0.2" [(ngModel)]="middleRadio2"><label class="radio-btn-label"
+                                                                                            for="middle-radio-2">Средняя</label>
+                </p>
+                <p><input type="radio" name="evaluate-your-impact-2" id="low-radio-2" value="0.1" [(ngModel)]="lowRadio2"><label class="radio-btn-label"
+                                                                                         for="low-radio-2">Низкая</label>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="question-container">
+                <p class="question">Оцените степень влияния практического опыта как
+                  специалиста по интерфейсам и(или) участие в разработке
+                  интерфейсов на Ваше мнение при выставлении оценки:</p>
+                <p><input type="radio" name="evaluate-your-impact-3" id="high-radio-3" value="0.2" [(ngModel)]="highRadio3"><label class="radio-btn-label"
+                                                                                          for="high-radio-3">Высокая</label>
+                </p>
+                <p><input type="radio" name="evaluate-your-impact-3" id="middle-radio-3" value="0.1" [(ngModel)]="middleRadio3"><label class="radio-btn-label"
+                                                                                            for="middle-radio-3">Средняя</label>
+                </p>
+                <p><input type="radio" name="evaluate-your-impact-3" id="low-radio-3" value="0" [(ngModel)]="lowRadio3"><label class="radio-btn-label"
+                                                                                         for="low-radio-3">Низкая</label>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="question-container">
+                <p class="question">Оцените степень влияния Вашей интуиции на Ваше мнение при
+                  выставлении оценки:</p>
+                <p><input type="radio" name="evaluate-your-impact-4" id="high-radio-4" value="0.1" [(ngModel)]="highRadio4"><label class="radio-btn-label"
+                                                                                          for="high-radio-4">Высокая</label>
+                </p>
+                <p><input type="radio" name="evaluate-your-impact-4" id="middle-radio-4" value="0.0" [(ngModel)]="middleRadio4"><label class="radio-btn-label"
+                                                                                            for="middle-radio-4">Средняя</label>
+                </p>
+                <p><input type="radio" name="evaluate-your-impact-4" id="low-radio-4" value="0" [(ngModel)]="lowRadio4"><label class="radio-btn-label"
+                                                                                         for="low-radio-4">Низкая</label>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="question-container">
+                <p class="question" [style.color]="color">Укажите сферу вашей деятельности:</p>
+                <select [(ngModel)]="selectedCategory" [style.border-color]="borderColor">
+                  <option value="" disabled>Выбрать</option>
+                  <option value="Наука">Наука</option>
+                  <option value="Кулинария">Кулинария</option>
+                  <option value="Информационные технологии">Информационные технологии</option>
+                  <option value="Транспорт">Транспорт</option>
+                  <option value="Туризм">Туризм</option>
+                  <option value="Медицина">Медицина</option>
+                  <option value="Финансы, бухгалтерия, банки">Финансы, бухгалтерия, банки</option>
+                  <option value="Бизнес">Бизнес</option>
+                  <option value="Образование">Образование</option>
+                  <option value="Промышленность">Промышленность</option>
+                  <option value="Юриспруденция">Юриспруденция</option>
+                  <option value="Обслуживание">Обслуживание</option>
+                </select>
+                <button type="submit" class="reg-btn" (click)="registerUser()">Регистрация</button>
+<!--                <a routerLink="/account-main-page"><button type="submit" class="reg-btn" [disabled]="!form.valid" (click)="registerUser()">Регистрация</button></a>-->
+              </div>
+            </div>
+          </div>
+
+          <!--Навигация по слайдеру-->
+          <div class="nav-swiper-buttons-container">
+            <div class="nav-swiper-button">
+              <div class="prev-button">
+                <button class="nav-btn sub-swiper-button-prev swiper-button-next"><p>Далее</p></button>
+              </div>
+              <div class="next-button">
+                <button class="nav-btn sub-swiper-button-next swiper-button-prev"><p>Назад</p></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>

@@ -1,0 +1,27 @@
+.user-info-container{
+  border: 1px solid #8f8f8f;
+  border-radius: 10px;
+  width: 448px;
+  height: 290px;
+  box-shadow: 5px 3px 15px #c4c4c4 ;
+}
+
+.user-info-container h1{
+  font-family: 'Fontin Sans';
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.user-info-text{
+  margin-top: 106px;
+  margin-left: 5%;
+}
+
+.user-info-text h1{
+  margin: 0;
+}
+
+.user-info-text p{
+  font-family: 'Fontin Sans';
+  font-size: 16px;
+}

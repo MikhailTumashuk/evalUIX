@@ -1,0 +1,65 @@
+/*Стили правой секции с весовым коэффициентом*/
+.weigh-factor-container{
+  border: 1px solid #8f8f8f;
+  border-radius: 10px;
+  margin-left: 8px;
+  width: 440px;
+  height: 290px;
+  box-shadow: 5px 3px 15px #c4c4c4 ;
+}
+
+.weigh-factor-container h2{
+  margin-left: 88px;
+  margin-top: 38px;
+  font-family: 'Fontin Sans';
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.weight-circle{
+  width: 100px;
+  height: 100px;
+  border: 1px solid #8f8f8f;
+  margin-left: 170px;
+  margin-top: 30px;
+  background: #ffffff;
+  border-radius: 50%;
+  animation-name: top-right-box-shadow;
+  animation-timing-function: linear;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes top-right-box-shadow {
+  0%{
+    box-shadow: 2px 2px 5px 1px #0A7AFF;
+  }
+  25%{
+    box-shadow: 2px -2px 5px 1px #FF5C17;
+  }
+  50% {
+    box-shadow: -2px -2px 5px 1px #0A7AFF;
+  }
+  75%{
+    box-shadow: -2px 2px 5px 1px #FF5C17;
+  }
+  100%{
+    box-shadow: 2px 2px 5px 1px #0A7AFF;
+  }
+}
+
+.weight-circle p{
+  font-family: 'Charis SIL';
+  font-size: 36px;
+  font-weight: 400;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.expert-title{
+  font-family: 'Fontin Sans';
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}

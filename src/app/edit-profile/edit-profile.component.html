@@ -1,0 +1,103 @@
+<body>
+<div class="container" [class.disabled]="isModalOpen">
+  <section class="user-info-section">
+    <button id="to-weight-form-btn" disabled title="Эта функция пока недоступна">Пройти анкету заново</button>
+    <app-user-info-bar></app-user-info-bar>
+    <app-weight-bar></app-weight-bar>
+    <app-sidebar></app-sidebar>
+  </section>
+  <section class="edit-profile-data-section">
+    <div class="edit-profile-data-container">
+      <h1>
+        Редактировать данные профиля
+      </h1>
+      <form id="edit-profile-form" [formGroup]="form">
+        <div class="input-container">
+          <div class="user-info-inputs">
+            <label for="edit-email">Электронная почта</label>
+            <input id="edit-email" type="email" formControlName="email" [(ngModel)]="email">
+
+            <span
+              class="form-help-text"
+              *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
+            >
+          <div *ngIf="form.get('email')?.hasError('required')">email не может быть пустым</div>
+          <div *ngIf="form.get('email')?.hasError('minlength')">email не может содержать меньше 2 символов</div>
+          <div *ngIf="form.get('email')?.hasError('email')">Введите корректный email</div>
+          <div *ngIf="form.get('email')?.hasError('maxlength')">email не может содержать более 30 символов</div>
+        </span>
+
+            <label for="edit-username">Имя пользователя</label>
+            <input id="edit-username" type="text" formControlName="login" [(ngModel)]="username">
+
+            <span
+              class="form-help-text"
+              *ngIf="form.get('login')?.invalid && form.get('login')?.touched"
+            >
+          <div *ngIf="form.get('login')?.hasError('required')">Логин не может быть пустым</div>
+          <div *ngIf="form.get('login')?.hasError('minlength')">Логин не может содержать меньше 2 символов</div>
+          <div *ngIf="form.get('login')?.hasError('pattern')">Логин должен содержать только буквы и числа</div>
+          <div *ngIf="form.get('login')?.hasError('maxlength')">Логин не может содержать более 15 символов</div>
+        </span>
+
+          </div>
+          <div class="password-inputs">
+
+            <label for="edit-password-input">Пароль</label>
+            <input id="edit-password-input" type="password" formControlName="password" [(ngModel)]="password" #passwordInput>
+            <button id="show-password" class="show-password-buttons" (click)="togglePasswordVisibility(passwordInput)">
+              <img src="assets/eye.png" alt="показать">
+            </button>
+            <span
+              class="form-help-text"
+              *ngIf="form.get('password')?.invalid && form.get('password')?.touched"
+            >
+              <div *ngIf="form.get('password')?.hasError('required')">Пароль не может быть пустым</div>
+              <div *ngIf="form.get('password')?.hasError('minlength')">Пароль не может содержать менее 7 символов</div>
+              <div *ngIf="form.get('password')?.hasError('maxlength')">Пароль не может содержать более 20 символов</div>
+            </span>
+
+            <div class="repeat-password-container">
+              <label  for="repeat-password-input">Повторите пароль</label>
+              <input id="repeat-password-input" type="password" formControlName="confirmPassword" [ngClass]="{'password-mismatch': form.hasError('passwordMismatch')}" #repeatPasswordInput>
+              <button id="repeat-password" class="show-password-buttons" (click)="togglePasswordVisibility(repeatPasswordInput)">
+                <img src="assets/eye.png" alt="показать">
+              </button>
+            </div>
+
+            <span
+              class="form-help-text"
+              *ngIf="form.get('confirmPassword')?.invalid && form.get('confirmPassword')?.touched"
+            >
+              <div *ngIf="form.get('confirmPassword')?.hasError('required')">Повторите пароль</div>
+              <div *ngIf="form.get('confirmPassword')?.hasError('passwordMismatch')">Пароли не совпадают</div>
+            </span>
+          </div>
+        </div>
+        <button class="save-btn" type="button" (click)="openModal(modalTemplate)" [disabled]="!form.valid">Сохранить</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+<div class="modal-background" [ngClass]="{'modal-open': isModalOpen}"></div>
+<!-- Модальное окно -->
+<ng-template #modalTemplate class="modal-container">
+  <div class="modal">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p class="modal-text">Вы уверены, что хотите сохранить изменения?</p>
+      </div>
+
+      <div class="modal-window-buttons-container">
+        <button id="yes-button" type="button" class="" (click)="updateData()">
+          Да
+        </button>
+        <button id="no-button" type="button" class="close" aria-label="Close" (click)="closeModal()">
+          Нет
+        </button>
+      </div>
+    </div>
+  </div>
+</ng-template>
+</body>

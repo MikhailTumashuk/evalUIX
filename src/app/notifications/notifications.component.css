@@ -1,0 +1,114 @@
+body{
+  width: 100%;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1202px;
+  display: flex;
+  margin-top: 30px;
+}
+
+.orders-container{
+  border: 1px solid #8f8f8f;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.orders-container h1{
+  margin-top: 50px;
+  margin-left: 25px;
+  font-family: 'Fontin Sans';
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.current-order{
+  width: 846px;
+  /*height: 70px;*/
+  border: 1px solid #8f8f8f;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 10px;
+  margin-top: 15px;
+  transition: ease-in-out 0.3s;
+}
+
+.order-header{
+  display: flex;
+}
+
+.current-order:hover{
+  border-color: #0A7AFF;
+}
+
+.unwrap-btn:hover{
+  box-shadow: 0px 0px 10px #0A7AFF;
+}
+
+.project-name{
+  font-family: 'Fontin Sans';
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 22px;
+}
+
+.unwrap-btn{
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 15px;
+  background-color: #0A7AFF;
+  border: none;
+  border-radius: 10px;
+  transition: ease-in-out 0.3s;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 4px 4px #c4c4c4 ;
+}
+
+/*Скрытая кнопка оценки*/
+.evaluate-button{
+  width: 170px;
+  height: 40px;
+
+  margin-left: 20px;
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #0A7AFF;
+  color: white;
+
+  font-family: "Fontin Sans";
+  font-size: 20px;
+  box-shadow: 0px 4px 4px #c4c4c4;
+}
+
+.evaluate-button:hover{
+  box-shadow: 0px 0px 10px #0A7AFF;
+}
+/*Скрытое описание*/
+.current-order-description-text{
+  margin-left: 20px;
+  width: 750px;
+
+  font-family: Raleway;
+  font-size: 16px;
+}
+
+.current-order-link{
+  display: block;
+  width: 750px;
+  margin-left: 20px;
+  font-family: "Raleway";
+  font-size: 16px;
+}
+
+

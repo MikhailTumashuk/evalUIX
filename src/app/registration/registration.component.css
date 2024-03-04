@@ -1,0 +1,507 @@
+body{
+  width: 100%;
+  overflow: hidden;
+  height: 780px;
+}
+
+.reg-container{
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 500px;
+  border: 1px solid #8F8F8F;
+  border-radius: 10px;
+  box-shadow: 5px 10px 15px #C8C8C8 ;
+  padding-top: 14px;
+  height: 684px;
+}
+
+.back-button{
+  margin-left: 14px;
+  position: absolute;
+}
+
+.back-button:hover img{
+  border: 1px solid #8F8F8F;
+  border-radius: 10px;
+}
+
+.reg-container h1{
+  font-size: 30px;
+  font-family: 'Fontin Sans';
+  font-weight: 400;
+  margin: 0;
+  margin-top: 46px ;
+  text-align: center;
+}
+
+.reg-form-container{
+  max-width: 428px;
+  height: 452px;
+  margin: 0 auto;
+  margin-top: 44px;
+  border: 1px solid #8F8F8F;
+  border-radius: 10px;
+}
+
+.reg-form-btn-container{
+  display: flex;
+}
+
+.reg-form-btn-container button{
+  transition: ease-in-out 0.3s;
+}
+
+.reg-form-btn-container button:hover{
+  text-decoration: underline;
+}
+
+.reg-form-btn-container button{
+  width: 214px;
+  height: 50px;
+  font-size: 20px;
+  background-color: transparent;
+  font-family: 'Fontin Sans';
+  border: none;
+  border-bottom: 1px solid #8F8F8F !important;
+  border-right: 1px solid #8F8F8F !important;
+}
+
+.reg-form-btn-container div{
+  width: 214px;
+  font-size: 20px;
+  height: 50px;
+  background-color: #0A7AFF;
+  font-family: 'Fontin Sans';
+  border: none;
+  border-top-right-radius: 10px;
+}
+
+.reg-form-btn-container p{
+  margin-left: 69px;
+  margin-top: 13px;
+  color: #ffffff;
+}
+
+.form-container{
+  display: block;
+  margin-top: 38px;
+  padding-left: 27px;
+}
+
+.form-container input{
+  width: 364px;
+  height: 40px;
+  border: 1px solid #8F8F8F;
+  border-radius: 10px;
+
+  font-family: 'Raleway';
+  font-size: 16px;
+  padding-left: 10px;
+  box-shadow: 0px 4px 4px #c4c4c4 ;
+  outline: none;
+  transition: ease-in-out 0.3s;
+}
+
+.form-container input:focus{
+  border-color: #0A7AFF;
+}
+
+.form-container input::placeholder{
+  color: #8f8f8f;
+  font-weight: 400;
+}
+
+#password{
+  margin-top: 10px;
+}
+
+#email{
+  margin-top: 10px;
+}
+
+#confirm-password{
+  margin-top: 10px;
+}
+
+.next-slide{
+  margin-top: 20px !important;
+  padding-top: 2px;
+  width: 378px;
+  height: 46px;
+  background-color: #0A7AFF;
+  border-radius: 10px;
+  font-family: 'Fontin Sans';
+  font-size: 20px;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0px 4px 4px #c4c4c4 ;
+  transition: ease-in-out 0.3s;
+}
+
+.next-slide:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.next-slide:hover{
+  box-shadow: 0px 0px 10px 1px #0A7AFF;
+}
+
+.main-swiper-button-prev{
+  width: 180px;
+  height: 45px;
+  margin-left: 190px;
+
+  background-color: #FF5C17;
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+  font-family: "Fontin Sans";
+  font-weight: lighter;
+  font-size: 18px;
+  box-shadow: 0px 4px 4px #C0C0C0;
+
+  transition: ease-in-out 0.3s;
+}
+
+.main-swiper-button-prev:hover{
+  box-shadow: 0px 0px 10px 1px #FF5C17;
+}
+
+
+.auth-link{
+  margin-left: 184px;
+  margin-top: 45px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Raleway';
+}
+.auth-link a {
+  color: #000000;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.expanded {
+  height: 200px;
+}
+
+/**/
+
+.form-help-text{
+  font-family: Raleway;
+  font-size: 14px;
+  color: red;
+}
+
+
+
+/*слайдер и второй слайд*/
+.to-registration-link-btn{
+  margin-left: 14px;
+}
+
+.to-registration-link-btn button{
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding-top: 3px;
+  border-radius: 10px;
+  transition: ease-in-out 0.3s;
+}
+
+.to-registration-link-btn button:hover{
+  border-color: #000000;
+}
+
+.container{
+  padding-top: 14px;
+  border: 1px solid #8F8F8F;
+  border-radius: 10px;
+  box-shadow: 5px 10px 15px #C8C8C8 ;
+  width: 630px;
+  height: 610px;
+  margin: 0 auto;
+  margin-top: 44px;
+}
+
+
+h1{
+  font-size: 30px;
+  font-family: 'Fontin Sans';
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+h2{
+  margin-top: 18px !important;
+  font-size: 20px;
+  font-family: 'Fontin Sans';
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+.sub-swiper-container {
+  width: 556px;
+  height: 392px;
+  margin-top: 20px;
+  border: 1px solid #8F8F8F;
+  border-radius: 10px;
+  margin-left: 37px;
+  overflow: hidden;
+}
+
+
+.swiper-slide {
+  text-align: justify;
+  background: #ffffff;
+  font-family: 'Raleway';
+
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.question-container{
+  margin-left: 23px;
+  margin-top: 30px !important;
+}
+
+.question{
+  font-size: 18px;
+  text-align: justify;
+  margin-right: 36px;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+.fake-checkbox{
+  display: inline-block;
+  width: 16px;
+  border: 1px solid #000000;
+  height: 16px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.fake-checkbox::before{
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #0A7AFF;
+  opacity: 0;
+  border-radius: 3px;
+  transition: .3s;
+  background-image: url("src/assets/checked.png");
+  background-repeat: no-repeat; /* Не повторяем */
+  background-position: center; /* Позиция картинки по центру */
+}
+
+input[type="checkbox"]:checked + .fake-checkbox{
+  border: none;
+}
+
+input[type="checkbox"]:checked + .fake-checkbox::before{
+  opacity: 1;
+}
+
+.range-container{
+  display: flex;
+  margin: 0;
+  align-items: center;
+  margin-top: 30px;
+}
+
+input[type="range"]{
+  width: 480px;
+  height: 2px;
+  margin: 0;
+  border-radius: 2px;
+  background: #000000;
+  margin-right: 16px;
+  appearance: none;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 40px;
+  height: 20px;
+  background-color: #0A7AFF;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+.slider-value{
+  font-size: 20px;
+}
+
+.radio-btn-label{
+  margin-left: 6px;
+  font-size: 18px;
+}
+
+select{
+  width: 506px;
+  height: 40px;
+
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 16px;
+
+  box-shadow: 0px 4px 4px #C0C0C0;
+  outline: none;
+  border: 1px solid #8F8F8F;
+  border-radius: 10px;
+
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+select:focus{
+  border-color: #0A7AFF;
+}
+
+select option{
+  border-radius: 10px;
+}
+
+.reg-btn{
+  width: 160px;
+  height: 46px;
+
+  margin-top: 204px;
+  margin-left: 178px;
+
+  background-color: #FF5C17;
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+  font-family: "Fontin Sans";
+  font-weight: lighter;
+  font-size: 20px;
+  box-shadow: 0px 4px 4px #C0C0C0;
+
+  transition: ease-in-out 0.3s;
+}
+
+.reg-btn:hover{
+  box-shadow: 0px 0px 10px 1px #FF5C17;
+}
+
+.reg-btn:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/*sub-swiper*/
+.sub-swiper-button-prev{
+  position: absolute;
+  margin-left: 210px;
+}
+
+.sub-swiper-button-next{
+  margin-right: 40px;
+  position: absolute;
+}
+
+
+/*.nav-swiper-button{*/
+/*  position: absolute;*/
+
+/*  bottom: 60px;*/
+/*}*/
+/*.nav-swiper-buttons-container{*/
+/*  margin-bottom: ;*/
+/*}*/
+
+.nav-btn{
+  width: 160px;
+  height: 46px;
+  background-color: #0A7AFF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+
+
+  font-family: "Fontin Sans";
+  font-weight: lighter;
+  font-size: 20px;
+  box-shadow: 0px 4px 4px #C0C0C0;
+}
+
+
+/**/
+/*стрелки которые скрыты*/
+.sub-swiper-button-prev::after,
+.sub-swiper-button-next::after{
+  color: #ffffff;
+  background-color: #0A7AFF;
+  font-size: 0px;
+}
+
+
+.nav-swiper-button{
+  position: relative;
+  bottom: 36px;
+}
+
+.pagination-container{
+  position: relative;
+  margin-top: 14px;
+  margin-left: 135px;
+}
+
+.sub-swiper-pagination{
+  display: flex;
+  width: 300px;
+  margin-left: 26px;
+  justify-content: space-between;
+}
+
+.sub-swiper-pagination >>> .swiper-pagination-bullet {
+  opacity: 1;
+  width: 30px;
+  height: 30px;
+  font-family: 'Helvetica';
+  font-weight: 100;
+  font-size: 24px;
+  border: black solid 1px;
+  background-color: transparent;
+  padding-left: 9px;
+}
+
+.sub-swiper-pagination >>> .swiper-pagination-bullet-active {
+  background-color: #0A7AFF;
+  color: white;
+}
+
+
+.show-password-buttons{
+  width: 32px;
+  height: 32px;
+  padding: 0px;
+
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+
+  margin-top: 16px;
+  margin-left: -40px;
+}
+
+.show-password-buttons:hover{
+  box-shadow: none;
+  filter: brightness(0%);
+}

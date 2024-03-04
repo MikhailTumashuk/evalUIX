@@ -1,0 +1,1198 @@
+<body>
+<div class="container">
+  <form action="">
+    <div class="main-slider-container swiper-container">
+
+      <div class="main-slider-wrapper swiper-wrapper">
+        <!--Слайд свайпера 1, блок формы 1, каждый слайд содержит в себе свайпер-->
+        <div class="main-slider-wrapper swiper-slide">
+          <div class="form-block-container">
+
+            <button title="На страницу уведомлений" class="to-registration-link-btn"
+                    (click)="removeEvaluationFromLocalStorage()"></button>
+
+            <h1>Оценка интерфейса</h1>
+            <h2>Блок 1</h2>
+            <h3>Продуктовое мышление и аналитика</h3>
+
+            <div class="sub-swiper-container-1">
+
+              <div class="sub-pagination-container-1">
+                <div class="sub-swiper-pagination-1 swiper-pagination"></div>
+              </div>
+
+              <div class="sub-slider-wrapper-1 swiper-wrapper">
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Соответствует предметной области и рынку.</p>
+                    <p><input type="checkbox" name="corresponds-subject-1" id="corresponds-subject-checkbox-1"
+                              value="0.476" [(ngModel)]="correspondsSubjectCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="corresponds-subject-checkbox-1">Соответствие текущему состоянию и ёмкости рынка,
+                      перспективам его дальнейшего развития</label></p>
+                    <p><input type="checkbox" name="corresponds-subject-2" id="corresponds-subject-checkbox-2"
+                              value="0.476" [(ngModel)]="correspondsSubjectCheckbox2"><span
+                      class="fake-checkbox"></span><label
+                      for="corresponds-subject-checkbox-2">Наличие базовых функционала и преимуществ конкурентов</label>
+                    </p>
+                    <p><input type="checkbox" name="corresponds-subject-3" id="corresponds-subject-checkbox-3"
+                              value="0.476" [(ngModel)]="correspondsSubjectCheckbox3"><span
+                      class="fake-checkbox"></span><label
+                      for="corresponds-subject-checkbox-3">Выделяется среди прямых, непрямых, косвенных конкурентов
+                      компании и их продуктов</label></p>
+                  </div>
+                </div>
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Удовлетворяет продуктовым гипотезам.</p>
+                    <p><input type="checkbox" name="satisfies-product-hypotheses-1"
+                              id="satisfies-product-hypotheses-checkbox-1" value="0.95"
+                              [(ngModel)]="satisfiesProductHypothesesCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="satisfies-product-hypotheses-checkbox-1">Учтен пользовательский опыт</label></p>
+                    <p><input type="checkbox" name="satisfies-product-hypotheses-2"
+                              id="satisfies-product-hypotheses-checkbox-2" value="0.95"
+                              [(ngModel)]="satisfiesProductHypothesesCheckbox2"><span
+                      class="fake-checkbox"></span><label
+                      for="satisfies-product-hypotheses-checkbox-2">Проработаны пользовательские всевозможные
+                      пользовательские сценарии</label></p>
+                    <p><input type="checkbox" name="satisfies-product-hypotheses-3"
+                              id="satisfies-product-hypotheses-checkbox-3" value="0.95"
+                              [(ngModel)]="satisfiesProductHypothesesCheckbox3"><span
+                      class="fake-checkbox"></span><label
+                      for="satisfies-product-hypotheses-checkbox-3">Соответствие отклика системы ожиданиям
+                      пользователя</label></p>
+                  </div>
+                </div>
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Выполнена поисковая оптимизация в вебе (SEO) и
+                      магазинах приложений (ASO).</p>
+                    <p><input type="checkbox" name="SEOASO" id="SEO-ASO-checkbox-1" value="1.43"
+                              [(ngModel)]="SEOASOCheckbox1"><span class="fake-checkbox"></span><label
+                      for="SEO-ASO-checkbox-1">Имеет ссылку для доступа или скачивания в быстром доступе</label></p>
+                  </div>
+                </div>
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Выполнена оптимизация интерфейсной и продуктовой
+                      производительности.</p>
+                    <p><input type="checkbox" name="optimisation-1" id="optimisation-checkbox-1" value="1.43"
+                              [(ngModel)]="optimisationCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="optimisation-checkbox-1">Время загрузки приложения (App Load Time) составляет
+                      2-3 секунды</label></p>
+                    <p><input type="checkbox" name="optimisation-2" id="optimisation-checkbox-2" value="1.43"
+                              [(ngModel)]="optimisationCheckbox2"><span
+                      class="fake-checkbox"></span><label
+                      for="optimisation-checkbox-2">“Краши” (App Crashes) составляют не более 1-2%</label></p>
+                    <p><input type="checkbox" name="optimisation-3" id="optimisation-checkbox-3" value="1.43"
+                              [(ngModel)]="optimisationCheckbox3"><span
+                      class="fake-checkbox"></span><label
+                      for="optimisation-checkbox-3">Суммарное время отклика (App Latency) с учетом аспектов
+                      взаимодействия сети не более 100 секунд</label></p>
+                  </div>
+                </div>
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Напишите, пожалуйста, Ваши комментарии и предложения по улучшению интерфейса с
+                      точки зрения продуктового мышления и аналитики.</p>
+                    <p><input class="comment" type="text" name="" id="comment-block-1" [maxLength]="150"
+                              placeholder="Ваш комментарий" autocomplete="off"></p>
+                  </div>
+
+                  <button class="main-swiper-button-next block-1" type="button">В блок 2</button>
+                </div>
+
+              </div>
+              <div class="nav-swiper-buttons-container">
+                <div class="nav-swiper-button">
+                  <div class="prev-button">
+                    <button class="nav-btn sub-swiper-button-prev-1 swiper-button-next"><p>Далее</p></button>
+                  </div>
+                  <div class="next-button">
+                    <button class="nav-btn sub-swiper-button-next-1 swiper-button-prev"><p>Назад</p></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Слайд свайпера 2, блок формы 2-->
+        <div class="main-slider-wrapper swiper-slide">
+          <div class="form-block-container">
+            <button title="На страницу уведомлений" class="to-registration-link-btn"
+                    (click)="removeEvaluationFromLocalStorage()"></button>
+            <h1>Оценка интерфейса</h1>
+            <h2>Блок 2</h2>
+            <h3>Пользовательские исследования и аналитика</h3>
+
+            <div class="sub-swiper-container-2">
+
+              <div class="sub-pagination-container-2">
+                <div class="sub-swiper-pagination-2 swiper-pagination"></div>
+              </div>
+
+              <div class="sub-slider-wrapper-2 swiper-wrapper">
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Понимание и описание пользователей.</p>
+                    <p><input type="checkbox" name="understanding-description-1"
+                              id="understanding-description-of-users-checkbox-1" value="10"
+                              [(ngModel)]="understandingDescriptionOfUsersCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="understanding-description-of-users-checkbox-1">Предложено решение проблем различных
+                      категорий
+                      выявленных в карточках-портретах целевой аудитории</label></p>
+                  </div>
+                  <button class="main-swiper-button-prev block-1-prev" type="button">В блок 1</button>
+                </div>
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Напишите, пожалуйста, Ваши комментарии и предложения по улучшению интерфейса с
+                      точки зрения пользовательских исследований и аналитики.</p>
+                    <p><input class="comment" type="text" name="" id="comment-block-2" [maxLength]="150"
+                              placeholder="Ваш комментарий" autocomplete="off"></p>
+                  </div>
+
+                  <button class="main-swiper-button-next block-1" type="button">В блок 3</button>
+                </div>
+
+              </div>
+              <div class="nav-swiper-buttons-container">
+                <div class="nav-swiper-button">
+                  <div class="prev-button">
+                    <button class="nav-btn sub-swiper-button-prev-2 swiper-button-next"><p>Далее</p></button>
+                  </div>
+                  <div class="next-button">
+                    <button class="nav-btn sub-swiper-button-next-2 swiper-button-prev"><p>Назад</p></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!--Слайд свайпера 3, блок формы 3-->
+        <div class="main-slider-wrapper swiper-slide">
+          <div class="form-block-container">
+            <button title="На страницу уведомлений" class="to-registration-link-btn"
+                    (click)="removeEvaluationFromLocalStorage()"></button>
+            <h1>Оценка интерфейса</h1>
+            <h2>Блок 3</h2>
+            <h3>Информационная архитектура и проектирование интерфейсов</h3>
+
+            <div class="sub-swiper-container-3">
+
+              <div class="sub-pagination-container-3">
+                <div class="sub-swiper-pagination-3 swiper-pagination"></div>
+              </div>
+
+              <!--Слайд 1-->
+              <div class="sub-slider-wrapper-3 swiper-wrapper">
+
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Спроектирована структура и навигация.</p>
+                    <p><input type="checkbox" name="project-structure-1" id="project-structure-checkbox-1" value="1.66"
+                              [(ngModel)]="projectStructureCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="project-structure-checkbox-1">Присутствует иерархия страниц/экранов (главная,
+                      второстепенная, модальная, системная)</label></p>
+                    <p><input type="checkbox" name="project-structure-2" id="project-structure-checkbox-2" value="1.66"
+                              [(ngModel)]="projectStructureCheckbox2"><span
+                      class="fake-checkbox"></span><label
+                      for="project-structure-checkbox-2">Отстутствуют листовые страницы</label></p>
+                    <p><input type="checkbox" name="project-structure-3" id="project-structure-checkbox-3" value="1.66"
+                              [(ngModel)]="projectStructureCheckbox3"><span
+                      class="fake-checkbox"></span><label
+                      for="project-structure-checkbox-3">Сквозной доступ ко всем страницам</label></p>
+                  </div>
+                  <button class="main-swiper-button-prev block-3" type="button">В блок 2</button>
+                </div>
+                <!--Слайд 2-->
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Спроектированы экраны интерфейса и их интерактивные
+                      прототипы (включая специфику платформ Android, iOS и т.п.).</p>
+                    <p><input type="checkbox" name="created-screens-of-interface-1"
+                              id="created-screens-of-interface-checkbox-1" value="0.625"
+                              [(ngModel)]="createdScreensOfInterfaceCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="created-screens-of-interface-checkbox-1">Знание паттернов интерфейсов и гайдлайнов платформ
+                      (веб, Android, iOS, Windows, Mac и другие)</label></p>
+                    <p><input type="checkbox" name="created-screens-of-interface-2"
+                              id="created-screens-of-interface-checkbox-2" value="0.625"
+                              [(ngModel)]="createdScreensOfInterfaceCheckbox2"><span
+                      class="fake-checkbox"></span><label
+                      for="created-screens-of-interface-checkbox-2">Расположение элементов интерфейса на экране в
+                      соответствии со сценариями использования (wireframes,
+                      макеты).</label></p>
+                    <p><input type="checkbox" name="created-screens-of-interface-3"
+                              id="created-screens-of-interface-checkbox-3" value="0.625"
+                              [(ngModel)]="createdScreensOfInterfaceCheckbox3"><span
+                      class="fake-checkbox"></span><label
+                      for="created-screens-of-interface-checkbox-3">Выбор оптимально подходящих для текущей задачи
+                      элементов
+                      интерфейса из типовых или собственных.</label></p>
+                    <p><input type="checkbox" name="created-screens-of-interface-4"
+                              id="created-screens-of-interface-checkbox-4" value="0.625"
+                              [(ngModel)]="createdScreensOfInterfaceCheckbox4"><span
+                      class="fake-checkbox"></span><label
+                      for="created-screens-of-interface-checkbox-4">Интерактивное взаимодействие с пользователем</label>
+                    </p>
+                  </div>
+                </div>
+                <!--Слайд 3-->
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Использование устойчивых принципов работы интерфейса
+                      и паттернов (гайдлайнов, спецификации и т.п.).</p>
+                    <p><input type="checkbox" name="patterns-of-interface-1" id="patterns-of-interface-checkbox-1"
+                              value="1.25" [(ngModel)]="patternsOfInterfaceCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="patterns-of-interface-checkbox-1">Использование типичных для выбранной платформы действий
+                      (кнопок, жестов, речевых команд) для взаимодействия
+                      с интерфейсом</label></p>
+                    <p><input type="checkbox" name="patterns-of-interface-2" id="patterns-of-interface-checkbox-2"
+                              value="1.25" [(ngModel)]="patternsOfInterfaceCheckbox2"><span
+                      class="fake-checkbox"></span><label
+                      for="patterns-of-interface-checkbox-2">Непротиворечие системным действиям и их атрибутам</label>
+                    </p>
+                  </div>
+                </div>
+
+                <!--Слайд 4-->
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Напишите, пожалуйста, Ваши комментарии и предложения по улучшению интерфейса с
+                      точки зрения информационной архитектуры и проектирования интерфейсов.</p>
+                    <p><input class="comment" type="text" name="" id="comment-block-3" [maxLength]="150"
+                              placeholder="Ваш комментарий" autocomplete="off"></p>
+                  </div>
+
+                  <button class="main-swiper-button-next block-2-prev" type="button">В блок 4</button>
+                </div>
+              </div>
+              <!--Навигация по слайдеру-->
+              <div class="nav-swiper-buttons-container">
+                <div class="nav-swiper-button">
+                  <div class="prev-button">
+                    <button class="nav-btn sub-swiper-button-prev-3 swiper-button-next"><p>Далее</p></button>
+                  </div>
+                  <div class="next-button">
+                    <button class="nav-btn sub-swiper-button-next-3 swiper-button-prev"><p>Назад</p></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!--Слайд свайпера 4, блок формы 4-->
+        <div class="main-slider-wrapper swiper-slide">
+          <div class="form-block-container">
+            <button title="На страницу уведомлений" class="to-registration-link-btn"
+                    (click)="removeEvaluationFromLocalStorage()"></button>
+            <h1>Оценка интерфейса</h1>
+            <h2>Блок 4</h2>
+            <h3>Визуальный дизайн</h3>
+
+            <div class="sub-swiper-container-4">
+
+              <div class="sub-pagination-container-4">
+                <div class="sub-swiper-pagination-4 swiper-pagination"></div>
+              </div>
+
+              <!--Слайд 1-->
+              <div class="sub-slider-wrapper-4 swiper-wrapper">
+
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Применены базовые принципы: композиция и сетки,
+                      типографика, цветоведение.</p>
+
+                    <p><input type="checkbox" name="basis-principles-1" id="basis-principles-checkbox-1" value="0.4"
+                              [(ngModel)]="basisPrinciplesCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="basis-principles-checkbox-1">Сборка гармоничного дизайн-макета</label></p>
+                    <p><input type="checkbox" name="basis-principles-2" id="basis-principles-checkbox-2" value="0.4"
+                              [(ngModel)]="basisPrinciplesCheckbox2"><span
+                      class="fake-checkbox"></span><label
+                      for="basis-principles-checkbox-2">Использование сетки (адаптивная и/или ассиметричная)</label></p>
+                    <p style="height: 30px"><input type="checkbox" name="basis-principles-3"
+                                                   id="basis-principles-checkbox-3" value="0.4"
+                                                   [(ngModel)]="basisPrinciplesCheckbox3"><span
+                      class="fake-checkbox"></span><label
+                      for="basis-principles-checkbox-3">Применение принципов композиционного равновесия
+                      и акцента</label></p>
+                    <p><input type="checkbox" name="basis-principles-4" id="basis-principles-checkbox-4" value="0.4"
+                              [(ngModel)]="basisPrinciplesCheckbox4"><span
+                      class="fake-checkbox"></span><label
+                      for="basis-principles-checkbox-4">Оптимальный с точки зрения восприятия и масштабируемости
+                      выбор шрифтов и шрифтовых пар. Нюансы геометрии букв.</label></p>
+                    <p><input type="checkbox" name="basis-principles-5" id="basis-principles-checkbox-5" value="0.4"
+                              [(ngModel)]="basisPrinciplesCheckbox5"><span
+                      class="fake-checkbox"></span><label
+                      for="basis-principles-checkbox-5">Оптимальный выбор цветовых моделей исходя из портретов
+                      целевой аудитории. Работа с ограниченной цветовой палитрой.
+                      Выбор ключевого цвета (Tint Color). Знание деталей восприятия
+                      цвета (пропорции, яркость, контраст, этнические и гендерные
+                      передпочтения).</label></p>
+                  </div>
+                  <button class="main-swiper-button-prev block-3-prev" type="button">В блок 3</button>
+                </div>
+                <!--Слайд 2-->
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Использована иконографика и иллюстрации.</p>
+                    <p><input type="checkbox" name="use-icongraphics-1" id="use-icongraphics-checkbox-1" value="0.66"
+                              [(ngModel)]="useIcongraphicsCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="use-icongraphics-checkbox-1">Использование пиктограмм</label></p>
+                    <p><input type="checkbox" name="use-icongraphics-2" id="use-icongraphics-checkbox-2" value="0.66"
+                              [(ngModel)]="useIcongraphicsCheckbox2"><span
+                      class="fake-checkbox"></span><label
+                      for="use-icongraphics-checkbox-2">Единая стилистика и оформление иконок и иллюстраций
+                    </label></p>
+                    <p><input type="checkbox" name="use-icongraphics-3" id="use-icongraphics-checkbox-3" value="0.66"
+                              [(ngModel)]="useIcongraphicsCheckbox3"><span
+                      class="fake-checkbox"></span><label
+                      for="use-icongraphics-checkbox-3">Подбор пиктограмм и иллюстраций из готовых наборов
+                      для платформ</label></p>
+                  </div>
+                </div>
+                <!--Слайд 3-->
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Выполнена анимация интерфейса и моушен-дизайн.</p>
+                    <p><input type="checkbox" name="animation-and-motion-1" id="animation-and-motion-checkbox-1"
+                              value="0.66" [(ngModel)]="animationAndMotionCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="animation-and-motion-checkbox-1">Анимация экранов и элементов интерфейса, пиктограмм
+                      и иллюстраций естественна и не противоречит системной.</label></p>
+                    <p><input type="checkbox" name="animation-and-motion-2" id="animation-and-motion-checkbox-2"
+                              value="0.66" [(ngModel)]="animationAndMotionCheckbox2"><span
+                      class="fake-checkbox"></span><label
+                      for="animation-and-motion-checkbox-2">Знание принципов анимации.</label></p>
+                    <p><input type="checkbox" name="animation-and-motion-3" id="animation-and-motion-checkbox-3"
+                              value="0.66" [(ngModel)]="animationAndMotionCheckbox3"><span
+                      class="fake-checkbox"></span><label
+                      for="animation-and-motion-checkbox-3">Знание паттернов и гайдлайнов платформ (веб, Android,
+                      iOS, Windows, Mac и другие).</label></p>
+                  </div>
+                </div>
+
+                <!--Слайд 4-->
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Осуществлена визуализация данных.</p>
+                    <p><input type="checkbox" name="data-visualisation-1" id="data-visualisation-checkbox-1"
+                              value="0.66" [(ngModel)]="dataVisualisationCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="data-visualisation-checkbox-1">Знание типов графиков и других способов визуализации
+                      данных и областей их применения.</label></p>
+                    <p><input type="checkbox" name="data-visualisation-2" id="data-visualisation-checkbox-2"
+                              value="0.66" [(ngModel)]="dataVisualisationCheckbox2"><span
+                      class="fake-checkbox"></span><label
+                      for="data-visualisation-checkbox-2">Работа с набором данных, и его оптимальное
+                      представление.</label></p>
+                    <p><input type="checkbox" name="data-visualisation-3" id="data-visualisation-checkbox-3"
+                              value="0.66" [(ngModel)]="dataVisualisationCheckbox3"><span
+                      class="fake-checkbox"></span><label
+                      for="data-visualisation-checkbox-3">Структурированность информации.</label></p>
+                  </div>
+                </div>
+
+                <!--Слайд 5-->
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Применены айдентика и брендинг (визуальный язык,
+                      стратегия).</p>
+                    <p><input type="checkbox" name="identity-and-branding-1" id="identity-and-branding-checkbox-1"
+                              value="2" [(ngModel)]="identityAndBrandingCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="identity-and-branding-checkbox-1">Использование элементов корпоративного стиля
+                      заказчика</label></p>
+                  </div>
+                </div>
+
+                <!--Слайд 6-->
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Напишите, пожалуйста, Ваши комментарии и предложения по улучшению интерфейса с
+                      точки зрения визуального дизайна.</p>
+                    <p><input class="comment" type="text" name="" id="comment-block-4" [maxLength]="150"
+                              placeholder="Ваш комментарий" autocomplete="off"></p>
+                  </div>
+
+                  <button class="main-swiper-button-next block-1" type="button">В блок 5</button>
+                </div>
+              </div>
+              <!--Навигация по слайдеру-->
+              <div class="nav-swiper-buttons-container">
+                <div class="nav-swiper-button">
+                  <div class="prev-button">
+                    <button class="nav-btn sub-swiper-button-prev-4 swiper-button-next"><p>Далее</p></button>
+                  </div>
+                  <div class="next-button">
+                    <button class="nav-btn sub-swiper-button-next-4 swiper-button-prev"><p>Назад</p></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Слайд свайпера 5, блок формы 5-->
+        <div class="main-slider-wrapper swiper-slide">
+          <div class="form-block-container">
+            <button title="На страницу уведомлений" class="to-registration-link-btn"
+                    (click)="removeEvaluationFromLocalStorage()"></button>
+            <h1>Оценка интерфейса</h1>
+            <h2>Блок 5</h2>
+            <h3>Микро-копирайтинг</h3>
+
+            <div class="sub-swiper-container-5">
+
+              <div class="sub-pagination-container-5">
+                <div class="sub-swiper-pagination-5 swiper-pagination"></div>
+              </div>
+
+              <div class="sub-slider-wrapper-5 swiper-wrapper">
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Созданы внутрисистемные тексты.</p>
+                    <p><input type="checkbox" name="in-system-text-1" id="in-system-text-checkbox-1" value="3.33"
+                              [(ngModel)]="inSystemTextCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="in-system-text-checkbox-1">Понятность служебных текстов для интерфейсов
+                      (названия элементов интерфейса, подсказки, сообщения
+                      об ошибках и т.д.)</label></p>
+                    <p><input type="checkbox" name="in-system-text-2" id="in-system-text-checkbox-2" value="3.33"
+                              [(ngModel)]="inSystemTextCheckbox2"><span
+                      class="fake-checkbox"></span><label
+                      for="in-system-text-checkbox-2">Понятность больших интерфейсных текстов (письмо рассылки,
+                      onboarding, страница помощи и пр.)</label></p>
+                    <p><input type="checkbox" name="in-system-text-3" id="in-system-text-checkbox-3" value="3.33"
+                              [(ngModel)]="inSystemTextCheckbox3"><span
+                      class="fake-checkbox"></span><label
+                      for="in-system-text-checkbox-3">Cоздание гайдлайнов Voice & Tone, формирование глоссария</label>
+                    </p>
+                  </div>
+                  <button class="main-swiper-button-prev block-5-prev" type="button">В блок 4</button>
+                </div>
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Напишите, пожалуйста, Ваши комментарии и предложения по улучшению интерфейса с
+                      точки зрения микро-копирайтинга.</p>
+                    <p><input class="comment" type="text" name="" id="comment-block-5" [maxLength]="150"
+                              placeholder="Ваш комментарий" autocomplete="off"></p>
+                  </div>
+
+                  <button class="main-swiper-button-next block-1" type="button">В блок 6</button>
+                </div>
+
+              </div>
+              <div class="nav-swiper-buttons-container">
+                <div class="nav-swiper-button">
+                  <div class="prev-button">
+                    <button class="nav-btn sub-swiper-button-prev-5 swiper-button-next"><p>Далее</p></button>
+                  </div>
+                  <div class="next-button">
+                    <button class="nav-btn sub-swiper-button-next-5 swiper-button-prev"><p>Назад</p></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Слайд свайпера 6, блок формы 6-->
+        <div class="main-slider-wrapper swiper-slide">
+          <div class="form-block-container">
+            <button title="На страницу уведомлений" class="to-registration-link-btn"
+                    (click)="removeEvaluationFromLocalStorage()"></button>
+            <h1>Оценка интерфейса</h1>
+            <h2>Блок 6</h2>
+            <h3>Адаптивность</h3>
+
+            <div class="sub-swiper-container-6">
+
+              <div class="sub-pagination-container-6">
+                <div class="sub-swiper-pagination-6 swiper-pagination"></div>
+              </div>
+
+              <div class="sub-slider-wrapper-6 swiper-wrapper">
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Адаптация визуального стиля.</p>
+                    <p><input type="checkbox" name="visual-adaptation-1" id="visual-adaptation-checkbox-1" value="2.5"
+                              [(ngModel)]="visualAdaptationCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="visual-adaptation-checkbox-1">Сохранение единой визуальной стилистики интерфейсов
+                      для различных платформ.</label></p>
+                    <p><input type="checkbox" name="visual-adaptation-2" id="visual-adaptation-checkbox-2" value="2.5"
+                              [(ngModel)]="visualAdaptationCheckbox2"><span
+                      class="fake-checkbox"></span><label
+                      for="visual-adaptation-checkbox-2">Возможность пользовательской настройки цветовой палитры,
+                      стиля отображения, масштаба текста и их сохранение</label></p>
+                  </div>
+                  <button class="main-swiper-button-prev block-6-prev" type="button">В блок 5</button>
+                </div>
+
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Адаптация стиля управления.</p>
+                    <p><input type="checkbox" name="manage-style-adaptation-1" id="manage-style-adaptation-checkbox-1"
+                              value="5" [(ngModel)]="manageStyleAdaptationCheckbox1"><span
+                      class="fake-checkbox"></span><label
+                      for="manage-style-adaptation-checkbox-1">Сохранение (с учетом системных) команд и жестов
+                      управления
+                      при работе с интерфейсом на различных платформах</label></p>
+                  </div>
+                </div>
+
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Напишите, пожалуйста, Ваши комментарии и предложения по улучшению интерфейса с
+                      точки зрения адаптивности.</p>
+                    <p><input class="comment" type="text" name="" id="comment-block-6" [maxLength]="150"
+                              placeholder="Ваш комментарий" autocomplete="off"></p>
+                  </div>
+
+                  <button class="main-swiper-button-next block-1" type="button">В блок 7</button>
+                </div>
+
+              </div>
+              <div class="nav-swiper-buttons-container">
+                <div class="nav-swiper-button">
+                  <div class="prev-button">
+                    <button class="nav-btn sub-swiper-button-prev-6 swiper-button-next"><p>Далее</p></button>
+                  </div>
+                  <div class="next-button">
+                    <button class="nav-btn sub-swiper-button-next-6 swiper-button-prev"><p>Назад</p></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Слайд свайпера 7, блок формы 7-->
+        <div class="main-slider-wrapper swiper-slide">
+          <div class="form-block-container">
+            <button title="На страницу уведомлений" class="to-registration-link-btn"
+                    (click)="removeEvaluationFromLocalStorage()"></button>
+            <h1>Оценка интерфейса</h1>
+            <h2>Блок 7</h2>
+            <h3>Итоговый комментарий</h3>
+
+            <div class="sub-swiper-container-7">
+
+              <div class="sub-pagination-container-7">
+                <div class="sub-swiper-pagination-7 swiper-pagination"></div>
+              </div>
+
+              <div class="sub-slider-wrapper-7 swiper-wrapper">
+
+                <div class="main-slider-wrapper swiper-slide">
+                  <div class="question-container">
+                    <p class="question">Напишите, пожалуйста, Ваши комментарии и предложения по улучшению интерфейса с
+                      точки зрения адаптивности.</p>
+                    <p><input class="comment" type="text" name="" id="comment-block-7" [maxLength]="150"
+                              placeholder="Ваш комментарий" autocomplete="off"></p>
+                  </div>
+                  <button class="main-swiper-button-prev block-7-prev" type="button">В блок 6</button>
+                  <button class="main-swiper-button-next block-7-prev" type="button">К итогам</button>
+                  <!--                  <a routerLink="/notifications"><button class="submit-form sub-swiper-button-prev-6">К итогам</button></a>-->
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!--Слайд с итогами оценки-->
+        <div class="main-slider-wrapper swiper-slide">
+          <div class="form-block-container result-block-container">
+            <button title="На страницу уведомлений" class="to-registration-link-btn"
+                    (click)="removeEvaluationFromLocalStorage()"></button>
+            <h1 class="result-header-h1">Оценка интерфейса</h1>
+            <h2 class="result-header-h2">Итоги: ваши ответы</h2>
+            <div class="result-container">
+
+              <div class="result-table">
+                <!--первая колонка-->
+                <div class="result-column">
+                  <div>
+                    <p class="block-number">Блок 1</p>
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight1 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 1</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(1)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl1 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded1">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="corresponds-subject-1" [(ngModel)]="correspondsSubjectCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 2</p>
+                          <input type="checkbox" name="corresponds-subject-2" [(ngModel)]="correspondsSubjectCheckbox2"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 3</p>
+                          <input type="checkbox" name="corresponds-subject-3" [(ngModel)]="correspondsSubjectCheckbox3"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div>
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight2 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 2</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(2)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl2 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded2">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="satisfies-product-hypotheses-1"
+                                 [(ngModel)]="satisfiesProductHypothesesCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 2</p>
+                          <input type="checkbox" name="satisfies-product-hypotheses-2"
+                                 [(ngModel)]="satisfiesProductHypothesesCheckbox2"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 3</p>
+                          <input type="checkbox" name="satisfies-product-hypotheses-3"
+                                 [(ngModel)]="satisfiesProductHypothesesCheckbox3"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight3 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 3</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(3)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl3 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded3">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="SEOASO" [(ngModel)]="SEOASOCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight4 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 4</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(4)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl4 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded4">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="optimisation-1" [(ngModel)]="optimisationCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 2</p>
+                          <input type="checkbox" name="optimisation-2" [(ngModel)]="optimisationCheckbox2"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 3</p>
+                          <input type="checkbox" name="optimisation-3" [(ngModel)]="optimisationCheckbox3"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+
+                <!--вторая колонка-->
+                <div class="result-column">
+                  <div>
+                    <p class="block-number">Блок 2</p>
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight5 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 5</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(5)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl5 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded5">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="understanding-description-1"
+                                 [(ngModel)]="understandingDescriptionOfUsersCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--третья колонка-->
+                <div class="result-column">
+                  <div>
+                    <p class="block-number">Блок 3</p>
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight6 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 6</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(6)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl6 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded6">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="project-structure-1"
+                                 [(ngModel)]="projectStructureCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 2</p>
+                          <input type="checkbox" name="project-structure-2"
+                                 [(ngModel)]="projectStructureCheckbox2"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 3</p>
+                          <input type="checkbox" name="project-structure-3"
+                                 [(ngModel)]="projectStructureCheckbox3"><span
+                          class="fake-checkbox"></span>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight7 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 7</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(7)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl7 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded7">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="created-screens-of-interface-1"
+                                 [(ngModel)]="createdScreensOfInterfaceCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 2</p>
+                          <input type="checkbox" name="created-screens-of-interface-2"
+                                 [(ngModel)]="createdScreensOfInterfaceCheckbox2"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 3</p>
+                          <input type="checkbox" name="created-screens-of-interface-3"
+                                 [(ngModel)]="createdScreensOfInterfaceCheckbox3"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 4</p>
+                          <input type="checkbox" name="created-screens-of-interface-4"
+                                 [(ngModel)]="createdScreensOfInterfaceCheckbox4"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight8 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 8</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(8)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl8 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded8">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="patterns-of-interface-1"
+                                 [(ngModel)]="patternsOfInterfaceCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 2</p>
+                          <input type="checkbox" name="patterns-of-interface-2"
+                                 [(ngModel)]="patternsOfInterfaceCheckbox2"><span
+                          class="fake-checkbox"></span>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--четвертая колонка-->
+                <div class="result-column">
+                  <div>
+                    <p class="block-number">Блок 4</p>
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight9 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 9</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(9)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl9 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded9">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="basis-principles-1" [(ngModel)]="basisPrinciplesCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 2</p>
+                          <input type="checkbox" name="basis-principles-2" [(ngModel)]="basisPrinciplesCheckbox2"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 3</p>
+                          <input type="checkbox" name="basis-principles-3" [(ngModel)]="basisPrinciplesCheckbox3"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 4</p>
+                          <input type="checkbox" name="basis-principles-4" [(ngModel)]="basisPrinciplesCheckbox4"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 5</p>
+                          <input type="checkbox" name="basis-principles-5" [(ngModel)]="basisPrinciplesCheckbox5"><span
+                          class="fake-checkbox"></span>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight10 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 10</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(10)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl10 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded10">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="use-icongraphics-1" [(ngModel)]="useIcongraphicsCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 2</p>
+                          <input type="checkbox" name="use-icongraphics-2" [(ngModel)]="useIcongraphicsCheckbox2"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 3</p>
+                          <input type="checkbox" name="use-icongraphics-3" [(ngModel)]="useIcongraphicsCheckbox3"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight11 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 11</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(11)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl11 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded11">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="animation-and-motion-1"
+                                 [(ngModel)]="animationAndMotionCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 2</p>
+                          <input type="checkbox" name="animation-and-motion-2"
+                                 [(ngModel)]="animationAndMotionCheckbox2"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 3</p>
+                          <input type="checkbox" name="animation-and-motion-3"
+                                 [(ngModel)]="animationAndMotionCheckbox3"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight12 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 12</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(12)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl12 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded12">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="data-visualisation-1"
+                                 [(ngModel)]="dataVisualisationCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 2</p>
+                          <input type="checkbox" name="data-visualisation-2"
+                                 [(ngModel)]="dataVisualisationCheckbox2"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 3</p>
+                          <input type="checkbox" name="data-visualisation-3"
+                                 [(ngModel)]="dataVisualisationCheckbox3"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div>
+
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight13 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 13</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(13)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl13 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded13">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="identity-and-branding-1"
+                                 [(ngModel)]="identityAndBrandingCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <!--Пятая колонка-->
+                <div class="result-column">
+                  <p class="block-number">Блок 5</p>
+                  <div>
+
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight14 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 14</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(14)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl14 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded14">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="in-system-text-1" [(ngModel)]="inSystemTextCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 2</p>
+                          <input type="checkbox" name="in-system-text-2" [(ngModel)]="inSystemTextCheckbox2"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 3</p>
+                          <input type="checkbox" name="in-system-text-3" [(ngModel)]="inSystemTextCheckbox3"><span
+                          class="fake-checkbox"></span>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Шестая колонка-->
+                <div class="result-column">
+                  <div>
+                    <p class="block-number">Блок 6</p>
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight15 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 15</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(15)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl15 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded15">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="visual-adaptation-1"
+                                 [(ngModel)]="visualAdaptationCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 2</p>
+                          <input type="checkbox" name="visual-adaptation-2"
+                                 [(ngModel)]="visualAdaptationCheckbox2"><span
+                          class="fake-checkbox"></span>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+
+                    <div class="indicator" [ngStyle]="{ 'height': indicatorHeight16 + 'px' }">
+                      <div class="indicator-header">
+                        <div class="indicator-name">
+                          <p class="indicator-number">Индикатор 16</p>
+                        </div>
+                        <div class="open-button-container">
+                          <button class="unwrap-btn" (click)="DropDownIndicatorBlock(16)"
+                                  [ngStyle]="{'backgroundImage': 'url(' + imageUrl16 + ')'}"></button>
+                        </div>
+                      </div>
+
+                      <div class="descriptors-container-indicator-1" *ngIf="isExpanded16">
+                        <div class="descriptor-container">
+                          <p class="descriptor-number">Дескриптор 1</p>
+                          <input type="checkbox" name="manage-style-adaptation-1"
+                                 [(ngModel)]="manageStyleAdaptationCheckbox1"><span
+                          class="fake-checkbox"></span>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="result-btn-container">
+              <button class="main-swiper-button-prev result-slide-prev" type="button">В блок 7</button>
+              <button class="submit-form-btn" (click)="submitEvaluation()">Отправить</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+<!--пагинация главного слайдера для разработчика-->
+<!--      <div class="pagination-container">-->
+<!--        <div class="main-swiper-pagination swiper-pagination"></div>-->
+<!--      </div>-->
+    </div>
+  </form>
+
+</div>
+</body>

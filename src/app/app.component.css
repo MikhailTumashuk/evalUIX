@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Fontin Sans;
+  src: url("src/assets/FontinSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Charis SIL;
+  src: url("src/assets/CharisSIL-R.ttf") format("opentype");
+}

@@ -1,0 +1,302 @@
+body{
+  width: 100%;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1202px;
+  margin-top: 30px;
+}
+
+#to-weight-form-btn{
+  position: absolute;
+  margin-left: 558px;
+  margin-top: 265px;
+  width: 250px;
+  height: 46px;
+  font-family: 'Fontin Sans';
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #0A7AFF;
+  color: white;
+  box-shadow: 0px 4px 4px #c4c4c4 ;
+  transition: ease-in-out 0.3s;
+}
+
+#to-weight-form-btn:hover{
+  box-shadow: 0px 0px 10px 1px #0A7AFF;
+}
+
+#to-weight-form-btn:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.user-info-section{
+  display: flex;
+}
+
+:host ::ng-deep .weigh-factor-container{
+  padding-bottom: 48px;
+}
+
+:host ::ng-deep .user-info-container{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.edit-profile-data-section{
+  margin-top: 8px;
+  width: 898px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  border: 1px solid #8F8F8F;
+  box-shadow: 5px 10px 15px #C8C8C8 ;
+}
+
+.edit-profile-data-section h1{
+  margin-top: 34px;
+  margin-left: 30px;
+  font-family: 'Fontin Sans';
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+form{
+  margin-top: 15px;
+}
+
+label{
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+
+.input-container{
+  display: flex;
+}
+
+input{
+  width: 374px;
+  height: 40px;
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 10px;
+  border: 1px solid #8F8F8F;
+
+  padding-left: 10px;
+  box-shadow: 0px 4px 4px #c4c4c4 ;
+  outline: none;
+  transition: ease-in-out 0.3s;
+}
+
+input:focus {
+  border-color: #0A7AFF;
+}
+
+.user-info-inputs{
+  display: flex;
+  flex-direction: column;
+}
+
+.password-inputs{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+#edit-profile-form{
+  margin-left: 44px;
+}
+
+.save-btn{
+  margin-left: 293px;
+  margin-top: 40px;
+  width: 250px;
+  height: 46px;
+  font-family: 'Fontin Sans';
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #0A7AFF;
+  color: white;
+  box-shadow: 0px 4px 4px #c4c4c4 ;
+  transition: ease-in-out 0.3s;
+}
+
+.save-btn:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.save-btn:hover{
+  box-shadow: 0px 0px 10px 1px #0A7AFF;
+}
+
+.form-help-text{
+  font-family: Raleway;
+  font-size: 14px;
+  color: red;
+}
+
+.show-password-buttons{
+  width: 32px;
+  height: 32px;
+  padding: 0px;
+
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  margin-left: 346px;
+}
+
+.show-password-buttons:hover{
+  box-shadow: none;
+  filter: brightness(0%);
+}
+
+#show-password{
+  margin-top: 46px;
+}
+
+#repeat-password{
+  margin-top: 10px;
+  margin-left: -41px;
+}
+
+.repeat-password-container{
+  margin-top: 18px;
+}
+
+.repeat-password-container input{
+  margin-top: 4px;
+}
+
+/*.modal-overlay {*/
+/*  position: fixed;*/
+/*  */
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  background-color: rgba(0, 0, 0, 0.5);*/
+/*  display: none;*/
+/*  z-index: 2;*/
+/*}*/
+
+.modal-container{
+
+  transition: ease-in-out 0.3s;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 500px;
+  height: 220px;
+
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  border-color: #0A7AFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.modal-body{
+  text-align: center;
+  margin-top: 76px;
+}
+
+.modal-text{
+  font-family: "Fontin Sans";
+  font-size: 20px;
+}
+
+.modal-window-buttons-container{
+  display: flex;
+  width: 424px;
+  height: 46px;
+  justify-content: space-between;
+  margin-left: 38px;
+  margin-top: 40px;
+}
+
+.modal-window-buttons-container button{
+  font-family: "Fontin Sans";
+  font-size: 20px;
+  width: 200px;
+  height: 46px;
+  border: none;
+  border-radius: 10px;
+
+  transition: ease-in-out 0.3s;
+}
+
+.container.disabled {
+  pointer-events: none;
+}
+
+#yes-button{
+  background-color: #0A7AFF;
+  color: #ffffff;
+}
+
+#yes-button:hover{
+  box-shadow: 0px 0px 10px #0A7AFF;
+}
+
+#no-button{
+  background-color: #FF5C17;
+  color: #ffffff;
+}
+
+#no-button:hover{
+  box-shadow: 0px 0px 10px #FF5C17;
+}
+
+/**/
+modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: none; /* По умолчанию скрыт */
+}
+
+.modal-open .modal-background {
+  display: block; /* Отображается, когда модальное окно открыто */
+}
+
+/*.modal-background {*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  background-color: rgba(0, 0, 0, 0.5); !* Задайте желаемую прозрачность *!*/
+/*  z-index: 999; !* Установите z-index, чтобы фон был выше остальных элементов *!*/
+/*  display: none; !* По умолчанию скрыт *!*/
+/*}*/
+
+/*.modal-open .modal-background {*/
+/*  display: block; !* Отображается, когда модальное окно открыто *!*/
+/*}*/

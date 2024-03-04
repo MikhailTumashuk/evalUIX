@@ -1,0 +1,51 @@
+<body>
+<div class="auth-container">
+  <a routerLink="/home" class="back-button"><img src="assets/back.png"></a>
+  <h1>
+    Вход
+  </h1>
+  <div class="auth-form-container">
+    <div class="auth-form-btn-container">
+      <a href=""><button>Пользователь</button></a>
+      <div><p>Эксперт<p></div>
+    </div>
+    <div class="form-container">
+
+      <form [formGroup]="form">
+        <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+        <input id="email" type="text" placeholder="Ваш e-mail" formControlName="email" #email required>
+        <span
+          class="form-help-text"
+          *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
+        >
+          <div *ngIf="form.get('email')?.hasError('required')">email не может быть пустым</div>
+          <div *ngIf="form.get('email')?.hasError('minlength')">email не может содержать меньше 2 символов</div>
+          <div *ngIf="form.get('email')?.hasError('email')">Введите корректный email</div>
+          <div *ngIf="form.get('email')?.hasError('maxlength')">email не может содержать более 30 символов</div>
+        </span>
+
+          <div>
+            <input id="password" type="password" placeholder="Пароль" formControlName="password" #password required>
+            <button id="show-password" class="show-password-buttons" (click)="togglePasswordVisibility(password)">
+              <img src="assets/eye.png" alt="показать">
+            </button>
+          </div>
+
+        <span
+          class="form-help-text"
+          *ngIf="form.get('password')?.invalid && form.get('password')?.touched"
+        >
+          <div *ngIf="form.get('password')?.hasError('required')">Пароль не может быть пустым</div>
+          <div *ngIf="form.get('password')?.hasError('minlength')">Пароль не может содержать менее 7 символов</div>
+          <div *ngIf="form.get('password')?.hasError('maxlength')">Пароль не может содержать более 20 символов</div>
+        </span>
+
+        <button class="enter" [disabled]="!form.valid" (click)="login(email.value, password.value)">Войти</button>
+      </form>
+    </div>
+  </div>
+  <div class="registration-link" >
+    <a routerLink="/registration">Еще не зарегистрированы?</a>
+  </div>
+</div>
+</body>

@@ -1,0 +1,28 @@
+<body>
+<div class="container">
+  <div class="orders-container">
+    <h1>Уведомления</h1>
+    <div class="current-orders">
+      <!--Контейнер для заказа прилетающего из БД-->
+      <div *ngFor="let request of evaluationRequests" class="current-order" [ngStyle]="{ 'height': request.noteHeight + 'px' }">
+        <!--Заголовок заказа-->
+        <div class="order-header">
+          <span class="project-name">{{ request.project_title }}</span>
+          <button class="unwrap-btn" (click)="DropDownNotification(request)"
+                  [ngStyle]="{'backgroundImage': 'url(' + request.imageUrl + ')'}"></button>
+        </div>
+        <!--Пояснение и ссылка-->
+        <div *ngIf="request.showDescription">
+          <p class="current-order-description-text">{{ request.description }}</p>
+          <a class="current-order-link">
+            <p>Ссылка на проект: <a href="{{ request.link }}" target="_blank">{{ request.link }}</a></p>
+          </a>
+          <button class="evaluate-button" (click)="toEvaluationForm(request)">Оценить</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    <app-sidebar></app-sidebar>
+</div>
+</body>
